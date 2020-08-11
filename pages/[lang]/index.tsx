@@ -4,9 +4,31 @@ import { Container, Row, Col } from "react-bootstrap";
 import withLocale from "../../i18n/hoc/withLocale";
 import useTranslation from "../../i18n/hooks/useTranslation";
 import styles from "./index.module.scss";
+import { useState, useEffect } from "react";
 
 const Home: NextPage = () => {
   const { locale, t } = useTranslation();
+  const [today, setToday] = useState<Date>();
+  const [weddingDate, setWeddingDate] = useState<Date>();
+  const [days, setDays] = useState<number>(0);
+  const [hours, setHours] = useState<number>(0);
+  const [minutes, setMinutes] = useState<number>(0);
+  const [seconds, setSeconds] = useState<number>(0);
+
+  const setDates = () => {
+    setToday(new Date());
+    setWeddingDate(new Date("2020-08-22T10:45:00.000"));
+
+    let delta = Math.abs(+weddingDate - +today) / 1000;
+    setDays(Math.floor(delta / 86400));
+    setHours(Math.floor(delta / 3600) % 24);
+    setMinutes(Math.floor(delta / 60) % 60);
+    setSeconds(+(delta % 60).toFixed(0));
+  };
+
+  useEffect(() => {
+    setDates();
+  }, [days, hours, minutes, seconds]);
 
   return (
     <div className={styles.jumbotron}>
@@ -16,21 +38,21 @@ const Home: NextPage = () => {
             <h1>{t("mainheader.welcome")}</h1>
             <div className={styles.clock}>
               <div>
-                <span className="days">10</span>
+                <span className="days">{days}</span>
                 <div className={styles.smalltext}>{t("mainheader.days")}</div>
               </div>
               <div>
-                <span className="hours">7</span>
+                <span className="hours">{hours}</span>
                 <div className={styles.smalltext}>{t("mainheader.hours")}</div>
               </div>
               <div>
-                <span className="minutes">5</span>
+                <span className="minutes">{minutes}</span>
                 <div className={styles.smalltext}>
                   {t("mainheader.minutes")}
                 </div>
               </div>
               <div>
-                <span className="seconds">3</span>
+                <span className="seconds">{seconds}</span>
                 <div className={styles.smalltext}>
                   {t("mainheader.seconds")}
                 </div>
