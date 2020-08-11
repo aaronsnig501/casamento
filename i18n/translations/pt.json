@@ -1,3 +1,7 @@
 {
-  "mainheader": "Bem-vindo"
+  "mainheader.welcome": "Bem-vindo",
+  "mainheader.days": "Dias",
+  "mainheader.hours": "Horas",
+  "mainheader.minutes": "Minutos",
+  "mainheader.seconds": "Segundas"
 }

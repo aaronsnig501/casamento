@@ -13,7 +13,29 @@ const Home: NextPage = () => {
       <Container fluid>
         <Row>
           <Col>
-            <h1>{t("mainheader")}</h1>
+            <h1>{t("mainheader.welcome")}</h1>
+            <div className={styles.clock}>
+              <div>
+                <span className="days">10</span>
+                <div className={styles.smalltext}>{t("mainheader.days")}</div>
+              </div>
+              <div>
+                <span className="hours">7</span>
+                <div className={styles.smalltext}>{t("mainheader.hours")}</div>
+              </div>
+              <div>
+                <span className="minutes">5</span>
+                <div className={styles.smalltext}>
+                  {t("mainheader.minutes")}
+                </div>
+              </div>
+              <div>
+                <span className="seconds">3</span>
+                <div className={styles.smalltext}>
+                  {t("mainheader.seconds")}
+                </div>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>

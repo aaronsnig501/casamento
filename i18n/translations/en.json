@@ -1,3 +1,7 @@
 {
-  "mainheader": "Welcome"
+  "mainheader.welcome": "Welcome",
+  "mainheader.days": "Days",
+  "mainheader.hours": "Hours",
+  "mainheader.minutes": "Minutes",
+  "mainheader.seconds": "Seconds"
 }

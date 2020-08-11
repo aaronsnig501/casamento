@@ -1,5 +1,5 @@
 .jumbotron {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("../../public/img/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -10,9 +10,31 @@
   align-content: center;
   flex-direction: column;
   text-align: center;
+  color: #ffb6c1;
 
   h1 {
-    z-index: 10;
-    color: #ffb6c1;
+    font-size: 3.5rem;
+  }
+
+  .clock {
+    font-family: sans-serif;
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+
+    .smalltext {
+      padding-top: 5px;
+    }
+
+    div {
+      padding: 10px;
+      display: inline-block;
+
+      span {
+        padding: 15px;
+        display: block;
+      }
+    }
   }
 }
