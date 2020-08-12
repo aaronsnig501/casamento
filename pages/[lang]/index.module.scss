@@ -13,7 +13,9 @@
   color: #ffb6c1;
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 1.75rem;
+    margin: 7.5%;
+    font-weight: 500;
   }
 
   .clock {
@@ -21,20 +23,43 @@
     display: inline-block;
     font-weight: 500;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.25rem;
 
     .smalltext {
       padding-top: 5px;
     }
 
     div {
-      padding: 10px;
+      padding: 5px;
       display: inline-block;
 
       span {
-        padding: 15px;
+        padding: 10px;
         display: block;
       }
+    }
+  }
+
+  .rsvp {
+    display: block;
+    text-decoration: none;
+    color: #ffb6c1;
+    border: 1px solid #ffb6c1;
+    border-radius: 17.5px;
+    width: 25%;
+    margin: auto;
+    padding: 1%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 15%;
+
+    &:hover,
+    &:active {
+      color: white;
+      background-color: #ffb6c1;
     }
   }
 }

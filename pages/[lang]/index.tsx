@@ -1,10 +1,11 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import { NextPage } from "next";
 import { Container, Row, Col } from "react-bootstrap";
 import withLocale from "../../i18n/hoc/withLocale";
 import useTranslation from "../../i18n/hooks/useTranslation";
 import styles from "./index.module.scss";
-import { useState, useEffect } from "react";
 
 const Home: NextPage = () => {
   const { locale, t } = useTranslation();
@@ -35,7 +36,10 @@ const Home: NextPage = () => {
       <Container fluid>
         <Row>
           <Col>
-            <h1>{t("mainheader.welcome")}</h1>
+            <h1>
+              You are cordially invited to the wedding of Aaron Sinnott & Camila
+              Lopes
+            </h1>
             <div className={styles.clock}>
               <div>
                 <span className="days">{days}</span>
@@ -58,6 +62,9 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
+            <Link href="/[lang]/rsvp" as={`/${locale}/rsvp`}>
+              <a className={styles.rsvp}>RSVP</a>
+            </Link>
           </Col>
         </Row>
       </Container>
