@@ -8,7 +8,18 @@ import withLocale from "../../../i18n/hoc/withLocale";
 import useTranslation from "../../../i18n/hooks/useTranslation";
 import styles from "./index.module.scss";
 
-const RsvpAdmin: NextPage = (props) => {
+interface Rsvp {
+  id: number;
+  name: string;
+  contactMethod: string;
+  contactInfo: string;
+}
+
+interface Props {
+  rsvps: Array<Rsvp>;
+}
+
+const RsvpAdmin: NextPage = (props: Props) => {
   return (
     <Container>
       <Row>
@@ -16,7 +27,7 @@ const RsvpAdmin: NextPage = (props) => {
           <h1>RSVPs</h1>
           {props.rsvps.map((item, i) => {
             return (
-              <div>
+              <div key={i}>
                 <h2>{item.name}</h2>
               </div>
             );
