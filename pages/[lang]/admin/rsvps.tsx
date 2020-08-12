@@ -19,7 +19,7 @@ interface Props {
   rsvps: Array<Rsvp>;
 }
 
-const RsvpAdmin: NextPage = (props: Props) => {
+const RsvpAdmin: NextPage<Props> = (props: Props) => {
   return (
     <Container>
       <Row>
