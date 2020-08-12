@@ -1,0 +1,47 @@
+.wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ffb6c1;
+  font-size: 1.25rem;
+  padding: 7.5%;
+}
+
+.form {
+  input {
+    display: block;
+    margin: 1.5% auto;
+    padding: 1.5%;
+  }
+
+  button {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #ffb6c1;
+    border: 1px solid #ffb6c1;
+    border-radius: 17.5px;
+    width: 25%;
+    margin: auto;
+    padding: 1%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 15%;
+
+    &:hover,
+    &:active {
+      color: white;
+      background-color: #ffb6c1;
+    }
+  }
+}

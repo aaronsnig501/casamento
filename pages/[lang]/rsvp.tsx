@@ -6,13 +6,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Field, Formik, Form } from "formik";
 import withLocale from "../../i18n/hoc/withLocale";
 import useTranslation from "../../i18n/hooks/useTranslation";
-import styles from "./index.module.scss";
+import styles from "./rsvp.module.scss";
 
 const Rsvp: NextPage = () => {
   return (
-    <Container>
+    <Container className={styles.wrapper}>
       <Row>
         <Col>
+          <h1>RSVP</h1>
           <Formik
             initialValues={{
               name: "",
@@ -28,23 +29,23 @@ const Rsvp: NextPage = () => {
               });
             }}
           >
-            <Form>
+            <Form className={styles.form}>
               <label>
-                Your Name
-                <Field name="name" type="text"></Field>
+                Your name
+                <Field name="name" type="text" />
               </label>
               <label>
-                Contact Method
-                <Field name="contactMethod" type="text"></Field>
+                How would you like us to send the link?
+                <Field name="contactMethod" type="text" />
               </label>
               <label>
-                Contact Info
-                <Field name="contactInfo" type="text"></Field>
+                Provide your contact information for the method above so we can
+                send you the link
+                <Field name="contactInfo" type="text" />
               </label>
               <button type="submit">Submit</button>
             </Form>
           </Formik>
-          <h1>Hello</h1>
         </Col>
       </Row>
     </Container>
