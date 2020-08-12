@@ -34,3 +34,7 @@ yarn-error.log*
 .vercel
 
 .vscode/
+
+/out_publish/
+/out_functions/
+/404.html
