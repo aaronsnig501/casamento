@@ -1,6 +1,11 @@
-import { AppProps } from "next/app";
+import App from "next/app";
+import { appWithTranslation } from "../i18n";
 import "../styles/global.scss";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;
+
+MyApp.getInitialProps = async (appContext) => ({
+  ...(await App.getInitialProps(appContext)),
+});
+
+export default appWithTranslation(MyApp);

@@ -1,7 +1,10 @@
-module.exports = {
-  target: "serverless",
+const { nextI18NextRewrites } = require("next-i18next/rewrites");
 
-  env: {
-    DATABASE_URL: process.env.DATABASE_URL,
+const localeSubpaths = {};
+
+module.exports = {
+  rewrites: async () => nextI18NextRewrites(localeSubpaths),
+  publicRuntimeConfig: {
+    localeSubpaths,
   },
 };
