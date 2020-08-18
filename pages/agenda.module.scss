@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+.agendaWrapper {
+  padding: 7.5%;
+  font-family: "Noto Sans JP", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+
+  h1 {
+    padding-bottom: 1.5%;
+    margin: 7.5% 0;
+    color: #ffb6c1;
+    border-bottom: #ffb6c1 solid 4px;
+  }
+
+  p {
+    color: #fff;
+    margin: 7.5% 0;
+  }
+}

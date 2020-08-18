@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
 .jumbotron {
+  font-family: "Dancing Script", cursive;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("../public/img/background.jpg");
   background-position: center;
@@ -37,6 +40,30 @@
         padding: 10px;
         display: block;
       }
+    }
+  }
+
+  .changeLanguage {
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffb6c1;
+    border: 1px solid #ffb6c1;
+    border-radius: 17.5px;
+    width: 25%;
+    margin: auto;
+    padding: 1%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: "Dancing Script", cursive;
+
+    &:hover,
+    &:active {
+      color: white;
+      background-color: #ffb6c1;
     }
   }
 

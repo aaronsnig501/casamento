@@ -1,12 +1,12 @@
 {
-  "welcome": "Welcome",
+  "welcome": "You are cordially invited to the wedding of Aaron Sinnott & Camila Lopes",
   "days": "Days",
   "hours": "Hours",
   "minutes": "Minutes",
   "seconds": "Seconds",
-  "heading": "Agenda for the day",
+  "agendaheading": "Agenda",
   "paragraphone": "The wedding will be held in Sao Jose do Rio Preto on the 22nd of August 2020 at 10:45 BRT (14:45 GMT+1). Due to the restrictions in place because of COVID-19, there will only be a small number of people allowed to join the ceremony, but we will be streaming on Zoom for anyone that cannot attend.",
-  "paragraphtwo": "To get access to the stream on Zoom, make sure that you have it installed on the device that you intend watch on (phone or laptop) and can open the link that we have provided. Please make sure to have this set up before the day. You can download it from the app store on your phone, or get it from this link - https://zoom.us/download",
+  "paragraphtwo": "To get access to the stream on Zoom, make sure that you have it installed on the device that you intend watch on (phone or laptop) and can open the link that we have provided. Please make sure to have this set up before the day. You can download it from the app store on your phone, or get it from this",
   "paragraphthree": "While the ceremony will start at 10:45, we are planning on setting up early to make sure that everythinhg is working, and this will liekly start at around 10:20",
   "paragraphfour": "The ceremony will only be performed in Portguese, and unfortunately we won't have a translator to translate to English, however, the ceremony won't last for much longer than 10 minutes."
 }
