@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "../i18n";
 import styles from "./index.module.scss";
 
-const Home: NextPage = (props: Props) => {
+const Home: NextPage = () => {
   const [today, setToday] = useState<Date>();
   const [weddingDate, setWeddingDate] = useState<Date>();
   const [days, setDays] = useState<number>(0);
@@ -29,8 +29,6 @@ const Home: NextPage = (props: Props) => {
   useEffect(() => {
     setDates();
   }, [days, hours, minutes, seconds]);
-
-  console.log(t("days"));
 
   return (
     <div className={styles.jumbotron}>
