@@ -62,8 +62,8 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <Link href="/[lang]/rsvp" as={`/${locale}/rsvp`}>
-              <a className={styles.rsvp}>RSVP</a>
+            <Link href="/[lang]/agenda" as={`/${locale}/agenda`}>
+              <a className={styles.rsvp}>Agenda</a>
             </Link>
           </Col>
         </Row>
