@@ -3,7 +3,7 @@ import Head from "next/head";
 import { NextPage } from "next";
 import { Container, Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { Link } from "../i18n";
+import { i18n, Link } from "../i18n";
 import styles from "./index.module.scss";
 
 const Home: NextPage = () => {
@@ -35,10 +35,16 @@ const Home: NextPage = () => {
       <Container fluid>
         <Row>
           <Col>
-            <h1>
-              You are cordially invited to the wedding of Aaron Sinnott & Camila
-              Lopes
-            </h1>
+            <h1>{t("welcome")}</h1>
+            <button
+              type="button"
+              className={styles.changeLanguage}
+              onClick={() =>
+                i18n.changeLanguage(i18n.language === "en" ? "pt" : "en")
+              }
+            >
+              {i18n.language === "en" ? "Portugues" : "English"}
+            </button>
             <div className={styles.clock}>
               <div>
                 <span className="days">{days.toString()}</span>
