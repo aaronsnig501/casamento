@@ -11,9 +11,6 @@ const Agenda: NextPage = () => {
       <Row>
         <Col>
           <div className={styles.agendaWrapper}>
-            <a href="https://us04web.zoom.us/j/72821548402?pwd=bUZTOUc2T2l0V1VlaVp3SU8vMytOUT09">
-              Link
-            </a>
             <h1>{t("agendaheading")}</h1>
             <p>{t("paragraphone")}</p>
             <p>
@@ -24,6 +21,12 @@ const Agenda: NextPage = () => {
             </p>
             <p>{t("paragraphthree")}</p>
             <p>{t("paragraphfour")}</p>
+            <a
+              className={styles.invitationLink}
+              href="https://us04web.zoom.us/j/72821548402?pwd=bUZTOUc2T2l0V1VlaVp3SU8vMytOUT09"
+            >
+              {t("invitation-link")}
+            </a>
           </div>
         </Col>
       </Row>

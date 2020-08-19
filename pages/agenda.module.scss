@@ -17,4 +17,32 @@
     margin: 7.5% 0;
     text-align: justify;
   }
+
+  a {
+    color: #ffb6c1;
+    text-decoration: underline;
+  }
+
+  .invitationLink {
+    display: block;
+    text-decoration: none;
+    color: #ffb6c1;
+    border: 1px solid #ffb6c1;
+    border-radius: 17.5px;
+    width: 25%;
+    margin: auto;
+    padding: 1%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: "Dancing Script", cursive;
+
+    &:hover,
+    &:active {
+      color: white;
+      background-color: #ffb6c1;
+    }
+  }
 }
