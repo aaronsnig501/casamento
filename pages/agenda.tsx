@@ -23,7 +23,7 @@ const Agenda: NextPage = () => {
             <p>{t("paragraphfour")}</p>
             <a
               className={styles.invitationLink}
-              href="https://us04web.zoom.us/j/72821548402?pwd=bUZTOUc2T2l0V1VlaVp3SU8vMytOUT09"
+              href="https://us02web.zoom.us/j/81743955794?pwd=aFRqKzE1aUIvL0hob290SitFbk5ZQT09"
             >
               {t("invitation-link")}
             </a>
